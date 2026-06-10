@@ -217,3 +217,46 @@ function atualizarCarrinho(){
 
 </body>
 </html>
+<section class="promocoes">
+    <h2>🔥 Promoções do Dia</h2>
+
+    <div class="promo-card">
+        <h3>Combo Café da Manhã</h3>
+        <p>1 Café + 2 Pães de Queijo</p>
+        <span>R$ 12,90</span>
+    </div>
+
+    <div class="promo-card">
+        <h3>Combo Família</h3>
+        <p>20 Pães + 4 Sonhos</p>
+        <span>R$ 24,90</span>
+    </div>
+</section>
+function alterarQuantidade(index, valor){
+    carrinho[index].quantidade += valor;
+
+    if(carrinho[index].quantidade <= 0){
+        carrinho.splice(index,1);
+    }
+
+    atualizarCarrinho();
+}
+        <footer>
+    <div>
+        <h3>Padaria Delícia</h3>
+        <p>Desde 1998 servindo qualidade.</p>
+    </div>
+
+    <div>
+        <h3>Contato</h3>
+        <p>📞 (88) 99999-9999</p>
+        <p>✉ contato@padaria.com</p>
+    </div>
+
+    <div>
+        <h3>Redes Sociais</h3>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+    </div>
+</footer>
