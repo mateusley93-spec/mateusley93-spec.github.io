@@ -1,1 +1,145 @@
-<h1>oi, este e meu site </h1>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Pão Quentinho</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #c97a2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #a55f1d;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 40px;
+            background-color: #f7d9a7;
+        }
+
+        .produtos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .produto img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .preco {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #c97a2b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a55f1d;
+        }
+
+        footer {
+            background-color: #c97a2b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🥖 Padaria Pão Quentinho</h1>
+        <p>Pães fresquinhos todos os dias!</p>
+    </header>
+
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="banner">
+        <h2>Bem-vindo à nossa padaria</h2>
+        <p>Qualidade, sabor e tradição para sua família.</p>
+    </section>
+
+    <section id="produtos" class="produtos">
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x150" alt="Pão Francês">
+            <h3>Pão Francês</h3>
+            <p>Pão crocante e fresquinho.</p>
+            <p class="preco">R$ 0,80/un</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x150" alt="Bolo de Chocolate">
+            <h3>Bolo de Chocolate</h3>
+            <p>Feito com chocolate premium.</p>
+            <p class="preco">R$ 25,00</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x150" alt="Sonho">
+            <h3>Sonho Recheado</h3>
+            <p>Recheio cremoso e delicioso.</p>
+            <p class="preco">R$ 6,00</p>
+            <button>Comprar</button>
+        </div>
+
+    </section>
+
+    <footer id="contato">
+        <h3>Contato</h3>
+        <p>📞 (88) 99999-9999</p>
+        <p>📍 Rua Principal, 123</p>
+        <p>&copy; 2026 Padaria Pão Quentinho</p>
+    </footer>
+
+</body>
+</html>
